@@ -1,14 +1,77 @@
-# material_action_sheet
+<p align="center">
+    <img src="https://github.com/viral-sangani/WeTube/raw/master/src/Static/linkedin_banner_image_2.jpg" alt="Personal Logo">
+    <br>
+    <br>
 
-A new Flutter package project.
+</p>
+<p align="center">
+🚀⚡ A Matrial Action Sheet widget to get Awesome Bottom Sheet List Widget.  🔥
+</p>
 
-## Getting Started
+<p align="center">
+    Project URL - <a href="https://github.com/viral-sangani/material_action_sheet">https://github.com/viral-sangani/material_action_sheet</a>
+</p>
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+# DEMO
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+<p align="center">
+<img src="./example/example.gif" alt="Personal Blog">
+</p>
+
+# Getting Started
+
+Add the package to your pubspec.yaml:
+
+```yaml
+material_action_sheet: ^0.0.1
+```
+
+In your dart file, import the library:
+
+```dart
+import 'package:material_action_sheet/material_action_sheet.dart';
+```
+
+To Use the widget instead of `showModalBottomSheet()` use `showMatrialActionSheet()`.
+
+```dart
+showMatrialActionSheet(
+  context: context,
+  itemsTextStyle: Theme.of(context).textTheme.headline6.copyWith(
+        color: Colors.blue,
+      ),
+  title: "Are you sure you want to close this?",
+  titleAlignment: TextAlign.center,
+  items: `[
+    MaterialActionItem(
+      title: "Yes",
+      onPressed: () {
+        print("Printtt");
+      },
+    ),
+  ],
+  showCancelButton: true,
+);
+```
+
+# Parameter
+
+### `showMatrialActionSheet:`
+
+- `context` - Need a current BuildContext. _@required_
+- `items` - items parameter takes the list of MaterialActionItem `List<MaterialActionItem>`. _@required_
+- `itemAlignment` - items alignment takes `TextAlign` for items in list.
+- `itemsTextStyle` - `TextStyle` of each items the list.
+- `title` - `String` for the title of bottomsheet. _@required_
+- `titleAlignment` - text alignment for title of bottomsheet.
+- `titleTextStyle` - `TextStyle` of title.
+- `maxHeight` - Maximun height of the bottom sheet.
+- `showCancelButton` - Show Cancel button to close the bottomsheet.
+- `onCancelPressed` - Callback functin on cancel button clicked.
+- `cancelAlignment` - Cancel buttom alignment.
+- `content` - Any widget to be shown between Title and List items.
+
+### `MaterialActionItem:`
+
+- `title` - Title for item of list. _@required_
+- `onPressed` - Callback function for onClick on each item.
