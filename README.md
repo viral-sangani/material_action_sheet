@@ -1,11 +1,5 @@
 <p align="center">
-    <img src="https://github.com/viral-sangani/WeTube/raw/master/src/Static/linkedin_banner_image_2.jpg" alt="Personal Logo">
-    <br>
-    <br>
-
-</p>
-<p align="center">
-🚀⚡ A Matrial Action Sheet widget to get Awesome Bottom Sheet List Widget.  🔥
+🚀A Matrial Action Sheet widget to get Awesome Bottom Sheet List Widget.  🔥
 </p>
 
 <p align="center">
@@ -15,7 +9,7 @@
 # DEMO
 
 <p align="center">
-<img src="./example/example.gif" alt="Personal Blog">
+<img src="https://raw.githubusercontent.com/viral-sangani/material_action_sheet/main/example/example.gif" alt="Personal Blog">
 </p>
 
 # Getting Started
@@ -23,7 +17,7 @@
 Add the package to your pubspec.yaml:
 
 ```yaml
-material_action_sheet: ^0.0.1
+material_action_sheet: ^0.0.2
 ```
 
 In your dart file, import the library:
