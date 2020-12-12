@@ -6,3 +6,7 @@
 
 - Code Refractoring
 - Readme updated
+
+## [0.0.3] - 12 December 2020
+
+- Readme updated
